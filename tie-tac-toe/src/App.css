@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;        /* Width of each square */
+  height: 60px;       /* Height of each square */
+  background-color: white;
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 24px;    /* Font size for X or O */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;     /* Pointer cursor on hover */
+  margin: 5px;        /* Space between squares */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.square:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
